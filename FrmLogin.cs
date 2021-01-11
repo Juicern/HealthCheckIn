@@ -63,18 +63,19 @@ namespace HealthCheckIn
             var registerInfo = LoginHelper.Register(this.tbAccount.Text, this.tbPassword.Text);
             if (registerInfo.Item1)
             {
-                MessageBox.Show("注册成功，将直接登录", "注册成功");
+                MessageBox.Show("注册成功，将直接登录", "注册成功", MessageBoxButtons.OK);
                 //登录
                 Login();
             }
             else
             {
-                MessageBox.Show($"注册失败, 失败原因：\n{registerInfo.Item2}", "注册失败");
+                MessageBox.Show($"注册失败, 失败原因：\n{registerInfo.Item2}", "注册失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }
         private void Login() {
-            new FrmSubmit(this.tbAccount.Text).Show();
+            this.DialogResult = DialogResult.OK;
+            Program.strCurAccount = this.tbAccount.Text;
             this.Close();
         }
     }

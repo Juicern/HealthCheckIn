@@ -42,6 +42,7 @@ namespace HealthCheckIn
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmSubmit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "健康打卡-表单";
             this.ResumeLayout(false);
 

@@ -40,8 +40,10 @@ namespace HealthCheckIn
             // 
             // lbAccount
             // 
+            this.lbAccount.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbAccount.AutoSize = true;
-            this.lbAccount.Location = new System.Drawing.Point(85, 49);
+            this.lbAccount.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbAccount.Location = new System.Drawing.Point(63, 66);
             this.lbAccount.Name = "lbAccount";
             this.lbAccount.Size = new System.Drawing.Size(82, 24);
             this.lbAccount.TabIndex = 0;
@@ -49,8 +51,10 @@ namespace HealthCheckIn
             // 
             // lbPassword
             // 
+            this.lbPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbPassword.AutoSize = true;
-            this.lbPassword.Location = new System.Drawing.Point(85, 116);
+            this.lbPassword.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbPassword.Location = new System.Drawing.Point(63, 149);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(82, 24);
             this.lbPassword.TabIndex = 1;
@@ -58,26 +62,35 @@ namespace HealthCheckIn
             // 
             // tbAccount
             // 
+            this.tbAccount.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbAccount.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.tbAccount.Location = new System.Drawing.Point(157, 49);
+            this.tbAccount.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tbAccount.Location = new System.Drawing.Point(147, 62);
+            this.tbAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbAccount.Name = "tbAccount";
-            this.tbAccount.Size = new System.Drawing.Size(270, 35);
+            this.tbAccount.Size = new System.Drawing.Size(314, 35);
             this.tbAccount.TabIndex = 2;
             // 
             // tbPassword
             // 
+            this.tbPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbPassword.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.tbPassword.Location = new System.Drawing.Point(157, 113);
+            this.tbPassword.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tbPassword.Location = new System.Drawing.Point(147, 145);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(270, 35);
+            this.tbPassword.Size = new System.Drawing.Size(314, 35);
             this.tbPassword.TabIndex = 3;
             // 
             // btnLogin
             // 
+            this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLogin.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnLogin.Location = new System.Drawing.Point(89, 197);
+            this.btnLogin.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnLogin.Location = new System.Drawing.Point(69, 217);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(137, 52);
+            this.btnLogin.Size = new System.Drawing.Size(160, 67);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "登录";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -85,10 +98,13 @@ namespace HealthCheckIn
             // 
             // btnRegister
             // 
+            this.btnRegister.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnRegister.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnRegister.Location = new System.Drawing.Point(290, 197);
+            this.btnRegister.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnRegister.Location = new System.Drawing.Point(301, 217);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(137, 52);
+            this.btnRegister.Size = new System.Drawing.Size(160, 67);
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "注册";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -96,22 +112,25 @@ namespace HealthCheckIn
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(525, 298);
+            this.ClientSize = new System.Drawing.Size(527, 326);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbAccount);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbAccount);
-            this.Font = new System.Drawing.Font("宋体", 12F);
+            this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "健康打卡-登录";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
