@@ -22,6 +22,7 @@ namespace HealthCheckIn
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
+            //读取配置文件
             this.dictLoginInfo = LoginHelper.GetLoginInfoFormConfig();
             InitInfo();
         }
@@ -31,11 +32,11 @@ namespace HealthCheckIn
             this.tbPassword.Text = dictLoginInfo["password"];
         }
         
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            if (!CheckInput()) return;
             //账号不存在
-            if(!LoginHelper.CheckAccount(this.tbAccount.Text))
+            if (!LoginHelper.CheckAccount(this.tbAccount.Text))
             {
                 MessageBox.Show("账号不存在，请点击“注册”按钮注册", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -52,6 +53,7 @@ namespace HealthCheckIn
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            if (!CheckInput()) return;
             //账号已存在
             if (LoginHelper.CheckAccount(this.tbAccount.Text))
             {
@@ -72,6 +74,9 @@ namespace HealthCheckIn
             }
             
         }
+        /// <summary>
+        /// 登录，跳到提交表单的窗口
+        /// </summary>
         private void Login() {
             dictLoginInfo["account"] = this.tbAccount.Text;
             dictLoginInfo["password"] = this.tbPassword.Text;
@@ -85,6 +90,24 @@ namespace HealthCheckIn
         {
             if (cbShowPwd.Checked) this.tbPassword.PasswordChar = (char)0;
             else this.tbPassword.PasswordChar = '*';
+        }
+        /// <summary>
+        /// 检查输入是否有未填写的
+        /// </summary>
+        /// <returns></returns>
+        private bool CheckInput()
+        {
+            if(this.tbAccount.Text == string.Empty)
+            {
+                MessageBox.Show($"未输入账号", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            if (this.tbPassword.Text == string.Empty)
+            {
+                MessageBox.Show($"未输入密码", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false; 
+            }
+            return true;
         }
     }
 }
