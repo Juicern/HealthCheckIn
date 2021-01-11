@@ -118,6 +118,7 @@ namespace HealthCheckIn
             // cbHealth
             // 
             this.cbHealth.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.cbHealth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbHealth.FormattingEnabled = true;
             this.cbHealth.Items.AddRange(new object[] {
             "健康",
@@ -139,6 +140,7 @@ namespace HealthCheckIn
             // cbLocation
             // 
             this.cbLocation.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.cbLocation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLocation.FormattingEnabled = true;
             this.cbLocation.Items.AddRange(new object[] {
             "在校",
@@ -158,6 +160,7 @@ namespace HealthCheckIn
             this.btnSubmit.TabIndex = 15;
             this.btnSubmit.Text = "提交";
             this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // FrmSubmit
             // 

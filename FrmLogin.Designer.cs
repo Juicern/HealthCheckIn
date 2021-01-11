@@ -36,6 +36,7 @@ namespace HealthCheckIn
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.cbShowPwd = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lbAccount
@@ -54,7 +55,7 @@ namespace HealthCheckIn
             this.lbPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbPassword.AutoSize = true;
             this.lbPassword.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbPassword.Location = new System.Drawing.Point(63, 149);
+            this.lbPassword.Location = new System.Drawing.Point(63, 133);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(82, 24);
             this.lbPassword.TabIndex = 1;
@@ -76,9 +77,10 @@ namespace HealthCheckIn
             this.tbPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbPassword.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.tbPassword.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tbPassword.Location = new System.Drawing.Point(147, 145);
+            this.tbPassword.Location = new System.Drawing.Point(147, 129);
             this.tbPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(314, 35);
             this.tbPassword.TabIndex = 3;
             // 
@@ -87,7 +89,7 @@ namespace HealthCheckIn
             this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLogin.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnLogin.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnLogin.Location = new System.Drawing.Point(69, 217);
+            this.btnLogin.Location = new System.Drawing.Point(67, 232);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(160, 67);
@@ -101,7 +103,7 @@ namespace HealthCheckIn
             this.btnRegister.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnRegister.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnRegister.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnRegister.Location = new System.Drawing.Point(301, 217);
+            this.btnRegister.Location = new System.Drawing.Point(301, 232);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(160, 67);
@@ -110,6 +112,17 @@ namespace HealthCheckIn
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
+            // cbShowPwd
+            // 
+            this.cbShowPwd.AutoSize = true;
+            this.cbShowPwd.Location = new System.Drawing.Point(338, 184);
+            this.cbShowPwd.Name = "cbShowPwd";
+            this.cbShowPwd.Size = new System.Drawing.Size(132, 28);
+            this.cbShowPwd.TabIndex = 6;
+            this.cbShowPwd.Text = "显示密码";
+            this.cbShowPwd.UseVisualStyleBackColor = true;
+            this.cbShowPwd.CheckedChanged += new System.EventHandler(this.cbShowPwd_CheckedChanged);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -117,6 +130,7 @@ namespace HealthCheckIn
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(527, 326);
+            this.Controls.Add(this.cbShowPwd);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.tbPassword);
@@ -124,7 +138,7 @@ namespace HealthCheckIn
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbAccount);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
@@ -146,6 +160,7 @@ namespace HealthCheckIn
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.CheckBox cbShowPwd;
     }
 }
 

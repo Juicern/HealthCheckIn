@@ -80,5 +80,11 @@ namespace HealthCheckIn
             Program.strCurAccount = this.tbAccount.Text;
             this.Close();
         }
+
+        private void cbShowPwd_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbShowPwd.Checked) this.tbPassword.PasswordChar = (char)0;
+            else this.tbPassword.PasswordChar = '*';
+        }
     }
 }

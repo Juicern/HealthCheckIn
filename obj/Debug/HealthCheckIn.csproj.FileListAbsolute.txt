@@ -8,4 +8,3 @@ C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\�
 C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\obj\Debug\HealthCheckIn.csproj.CoreCompileInputs.cache
 C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\obj\Debug\HealthCheckIn.exe
 C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\obj\Debug\HealthCheckIn.pdb
-C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\obj\Debug\HealthCheckIn.csprojAssemblyReference.cache
