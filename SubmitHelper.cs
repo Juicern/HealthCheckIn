@@ -22,5 +22,6 @@ namespace HealthCheckIn
             ConfigHelper.UpdateAppConfig("health", dictSubmitInfo["health"]);
             ConfigHelper.UpdateAppConfig("location", dictSubmitInfo["location"]);
         }
+        public static bool UpdateSubmitInfo(Dictionary<string, string> dictSubmitInfo) => new DataBaseHelper().UpdateSubmitInfo(dictSubmitInfo);
     }
 }
