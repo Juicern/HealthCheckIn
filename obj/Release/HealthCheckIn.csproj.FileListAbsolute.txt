@@ -1,0 +1,11 @@
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\bin\Release\HealthCheckIn.exe.config
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\bin\Release\HealthCheckIn.exe
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\bin\Release\HealthCheckIn.pdb
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\obj\Release\HealthCheckIn.csprojAssemblyReference.cache
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\obj\Release\HealthCheckIn.FrmLogin.resources
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\obj\Release\HealthCheckIn.FrmSubmit.resources
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\obj\Release\HealthCheckIn.Properties.Resources.resources
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\obj\Release\HealthCheckIn.csproj.GenerateResource.cache
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\obj\Release\HealthCheckIn.csproj.CoreCompileInputs.cache
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\obj\Release\HealthCheckIn.exe
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\obj\Release\HealthCheckIn.pdb
