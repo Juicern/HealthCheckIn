@@ -74,6 +74,7 @@ namespace HealthCheckIn
             
         }
         private void Login() {
+            UpdateLoginInfoToConfig();
             this.DialogResult = DialogResult.OK;
             Program.strCurAccount = this.tbAccount.Text;
             this.Close();
