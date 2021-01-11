@@ -9,6 +9,11 @@ namespace HealthCheckIn
 {
     public class ConfigHelper
     {
+        /// <summary>
+        /// 读取strKey的配置缓存信息
+        /// </summary>
+        /// <param name="strKey">要查找的key</param>
+        /// <returns>查找的值</returns>
         public static string GetAppConfig(string strKey)
         {
             string file = System.Windows.Forms.Application.ExecutablePath;
@@ -22,6 +27,11 @@ namespace HealthCheckIn
             }
             return string.Empty;
         }
+        /// <summary>
+        /// 更新配置信息
+        /// </summary>
+        /// <param name="newKey">新的key</param>
+        /// <param name="newValue">新的value</param>
         public static void UpdateAppConfig(string newKey, string newValue)
         {
             string file = System.Windows.Forms.Application.ExecutablePath;

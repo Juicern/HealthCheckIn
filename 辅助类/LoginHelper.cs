@@ -13,13 +13,13 @@ namespace HealthCheckIn
         {
             var dictLoginInfo = new Dictionary<string, string>();
             dictLoginInfo.Add("account", ConfigHelper.GetAppConfig("account"));
-            dictLoginInfo.Add("password", ToMD5(ConfigHelper.GetAppConfig("password")));
+            dictLoginInfo.Add("password", ConfigHelper.GetAppConfig("password"));
             return dictLoginInfo;
         }
         public static void UpdateLoginInfoToConfig(Dictionary<string, string> dictLoginInfo)
         {
             ConfigHelper.UpdateAppConfig("account", dictLoginInfo["account"]);
-            ConfigHelper.UpdateAppConfig("password", ToMD5(dictLoginInfo["password"]));
+            ConfigHelper.UpdateAppConfig("password", dictLoginInfo["password"]);
         }
 
         //check if this account is in db
