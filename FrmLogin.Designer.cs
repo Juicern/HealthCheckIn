@@ -30,24 +30,103 @@ namespace HealthCheckIn
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
+            this.lbAccount = new System.Windows.Forms.Label();
+            this.lbPassword = new System.Windows.Forms.Label();
+            this.tbAccount = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // lbAccount
+            // 
+            this.lbAccount.AutoSize = true;
+            this.lbAccount.Location = new System.Drawing.Point(85, 49);
+            this.lbAccount.Name = "lbAccount";
+            this.lbAccount.Size = new System.Drawing.Size(82, 24);
+            this.lbAccount.TabIndex = 0;
+            this.lbAccount.Text = "账号：";
+            // 
+            // lbPassword
+            // 
+            this.lbPassword.AutoSize = true;
+            this.lbPassword.Location = new System.Drawing.Point(85, 116);
+            this.lbPassword.Name = "lbPassword";
+            this.lbPassword.Size = new System.Drawing.Size(82, 24);
+            this.lbPassword.TabIndex = 1;
+            this.lbPassword.Text = "密码：";
+            // 
+            // tbAccount
+            // 
+            this.tbAccount.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tbAccount.Location = new System.Drawing.Point(157, 49);
+            this.tbAccount.Name = "tbAccount";
+            this.tbAccount.Size = new System.Drawing.Size(270, 35);
+            this.tbAccount.TabIndex = 2;
+            // 
+            // tbPassword
+            // 
+            this.tbPassword.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tbPassword.Location = new System.Drawing.Point(157, 113);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(270, 35);
+            this.tbPassword.TabIndex = 3;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnLogin.Location = new System.Drawing.Point(89, 197);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(137, 52);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "登录";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnRegister.Location = new System.Drawing.Point(290, 197);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(137, 52);
+            this.btnRegister.TabIndex = 5;
+            this.btnRegister.Text = "注册";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(767, 447);
+            this.ClientSize = new System.Drawing.Size(525, 298);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.tbPassword);
+            this.Controls.Add(this.tbAccount);
+            this.Controls.Add(this.lbPassword);
+            this.Controls.Add(this.lbAccount);
             this.Font = new System.Drawing.Font("宋体", 12F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmLogin";
             this.Text = "健康打卡-登录";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lbAccount;
+        private System.Windows.Forms.Label lbPassword;
+        private System.Windows.Forms.TextBox tbAccount;
+        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnRegister;
     }
 }
 
