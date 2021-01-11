@@ -13,25 +13,24 @@ namespace HealthCheckIn
 {
     public partial class FrmLogin : Form
     {
+        Dictionary<string, string> dictLoginInfo;
         public FrmLogin()
         {
+            dictLoginInfo = new Dictionary<string, string>();
             InitializeComponent();
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-            (this.tbAccount.Text, this.tbPassword.Text) = GetLoginInfoFormConfig();
+            this.dictLoginInfo = LoginHelper.GetLoginInfoFormConfig();
+            InitInfo();
         }
-
-        private (string, string) GetLoginInfoFormConfig()
+        private void InitInfo()
         {
-            return (ConfigHelper.GetAppConfig("account"), ConfigHelper.GetAppConfig("password"));
+            this.tbAccount.Text = dictLoginInfo["account"];
+            this.tbPassword.Text = dictLoginInfo["password"];
         }
-        private void UpdateLoginInfoToConfig()
-        {
-            ConfigHelper.UpdateAppConfig("account", this.tbAccount.Text);
-            ConfigHelper.UpdateAppConfig("password", this.tbPassword.Text);
-        }
+        
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -74,7 +73,9 @@ namespace HealthCheckIn
             
         }
         private void Login() {
-            UpdateLoginInfoToConfig();
+            dictLoginInfo["account"] = this.tbAccount.Text;
+            dictLoginInfo["password"] = this.tbPassword.Text;
+            LoginHelper.UpdateLoginInfoToConfig(dictLoginInfo);
             this.DialogResult = DialogResult.OK;
             Program.strCurAccount = this.tbAccount.Text;
             this.Close();

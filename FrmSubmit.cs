@@ -18,5 +18,15 @@ namespace HealthCheckIn
             InitializeComponent();
             this.strAccount = strAccount;
         }
+
+        private void FrmSubmit_Load(object sender, EventArgs e)
+        {
+            this.lbAcount.Text = $"用户: {strAccount}";
+            this.lbTime.Text = $"时间: {DateTime.Now:yyyy/MM/dd}";
+        }
+        private void InitInfo()
+        {
+
+        }
     }
 }
