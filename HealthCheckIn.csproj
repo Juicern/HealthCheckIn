@@ -51,28 +51,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigHelper.cs" />
-    <Compile Include="DataBaseHelper.cs" />
-    <Compile Include="FrmLogin.cs">
+    <Compile Include="辅助类\ConfigHelper.cs" />
+    <Compile Include="辅助类\DataBaseHelper.cs" />
+    <Compile Include="窗口类\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin.Designer.cs">
+    <Compile Include="窗口类\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSubmit.cs">
+    <Compile Include="窗口类\FrmSubmit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSubmit.Designer.cs">
+    <Compile Include="窗口类\FrmSubmit.Designer.cs">
       <DependentUpon>FrmSubmit.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginHelper.cs" />
+    <Compile Include="辅助类\LoginHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SubmitHelper.cs" />
-    <EmbeddedResource Include="FrmLogin.resx">
+    <Compile Include="辅助类\SubmitHelper.cs" />
+    <EmbeddedResource Include="窗口类\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSubmit.resx">
+    <EmbeddedResource Include="窗口类\FrmSubmit.resx">
       <DependentUpon>FrmSubmit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
