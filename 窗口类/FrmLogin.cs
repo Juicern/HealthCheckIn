@@ -14,23 +14,22 @@ namespace HealthCheckIn
 {
     public partial class FrmLogin : Form
     {
-        Dictionary<string, string> dictLoginInfo;
+        Person person;
         public FrmLogin()
         {
-            dictLoginInfo = new Dictionary<string, string>();
             InitializeComponent();
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
             //读取配置文件
-            this.dictLoginInfo = PersonLoginHelper.GetLoginInfoFormConfig();
+            this.person = PersonLoginHelper.GetLoginInfoFormConfig();
             InitInfo();
         }
         private void InitInfo()
         {
-            this.tbAccount.Text = dictLoginInfo[ParameterHelper.personAccount];
-            this.tbPassword.Text = dictLoginInfo[ParameterHelper.personPassword];
+            this.tbAccount.Text = person.account;
+            this.tbPassword.Text = person.password;
         }
         
         private void btnLogin_Click(object sender, EventArgs e)
@@ -79,9 +78,9 @@ namespace HealthCheckIn
         /// 登录，跳到提交表单的窗口
         /// </summary>
         private void Login() {
-            dictLoginInfo[ParameterHelper.personAccount] = this.tbAccount.Text;
-            dictLoginInfo[ParameterHelper.personPassword] = this.tbPassword.Text;
-            PersonLoginHelper.UpdateLoginInfoToConfig(dictLoginInfo);
+            person.account = this.tbAccount.Text;
+            person.password = this.tbPassword.Text;
+            PersonLoginHelper.UpdateLoginInfoToConfig(person);
             this.DialogResult = DialogResult.OK;
             Program.strCurAccount = this.tbAccount.Text;
             this.Close();

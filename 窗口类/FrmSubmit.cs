@@ -13,12 +13,12 @@ namespace HealthCheckIn
 {
     public partial class FrmSubmit : Form
     {
-        private string strAccount;
-        private Dictionary<string, string> dictSubmitInfo;
+        private readonly string strAccount;
+        private Submit submit;
         public FrmSubmit(string strAccount)
         {
             InitializeComponent();
-            dictSubmitInfo = SubmitHelper.GetSubmitInfoFromConfig();
+            this.submit = SubmitHelper.GetSubmitInfoFromConfig();
             this.strAccount = strAccount;
         }
 
@@ -30,25 +30,25 @@ namespace HealthCheckIn
         {
             this.tbAccount.Text = this.strAccount;
             this.tbTime.Text = DateTime.Now.ToString("yyyy-MM-dd");
-            this.tbTemperature.Text = dictSubmitInfo[ParameterHelper.temperature];
-            this.cbHealth.Text = dictSubmitInfo[ParameterHelper.health];
-            this.cbLocation.Text = dictSubmitInfo[ParameterHelper.location];
+            this.tbTemperature.Text = this.submit.temperature;
+            this.cbHealth.Text = this.submit.health;
+            this.cbLocation.Text = this.submit.location;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             if (!CheckInput()) return;
-            dictSubmitInfo.Add(ParameterHelper.account, this.tbAccount.Text);
-            dictSubmitInfo.Add(ParameterHelper.time, this.tbTime.Text);
-            dictSubmitInfo[ParameterHelper.temperature] = this.tbTemperature.Text;
-            dictSubmitInfo[ParameterHelper.health] = this.cbHealth.Text;
-            dictSubmitInfo[ParameterHelper.location] = this.cbLocation.Text;
+            this.submit.account = this.tbAccount.Text;
+            this.submit.time = DateTime.Now.ToString();
+            this.submit.temperature = this.tbTemperature.Text;
+            this.submit.health = this.cbHealth.Text;
+            this.submit.location = this.cbLocation.Text;
 
             //更新数据库
-            SubmitHelper.UpdateSubmitInfo(dictSubmitInfo);
+            SubmitHelper.UpdateSubmitInfo(this.submit);
             
             //更新config文件
-            SubmitHelper.UpdateSubmitInfoToConfig(dictSubmitInfo);
+            SubmitHelper.UpdateSubmitInfoToConfig(this.submit);
             
             MessageBox.Show("打卡成功");
         }
