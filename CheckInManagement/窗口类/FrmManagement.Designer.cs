@@ -56,7 +56,7 @@ namespace CheckInManagement
             this.lvPersons.Location = new System.Drawing.Point(4, 32);
             this.lvPersons.Margin = new System.Windows.Forms.Padding(4);
             this.lvPersons.Name = "lvPersons";
-            this.lvPersons.Size = new System.Drawing.Size(279, 785);
+            this.lvPersons.Size = new System.Drawing.Size(234, 970);
             this.lvPersons.TabIndex = 0;
             this.lvPersons.UseCompatibleStateImageBehavior = false;
             this.lvPersons.View = System.Windows.Forms.View.List;
@@ -110,7 +110,7 @@ namespace CheckInManagement
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dgvSubmits.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvSubmits.RowTemplate.Height = 30;
-            this.dgvSubmits.Size = new System.Drawing.Size(913, 787);
+            this.dgvSubmits.Size = new System.Drawing.Size(1223, 972);
             this.dgvSubmits.TabIndex = 1;
             // 
             // account
@@ -151,7 +151,7 @@ namespace CheckInManagement
             this.gbPersons.Margin = new System.Windows.Forms.Padding(4);
             this.gbPersons.Name = "gbPersons";
             this.gbPersons.Padding = new System.Windows.Forms.Padding(4);
-            this.gbPersons.Size = new System.Drawing.Size(287, 821);
+            this.gbPersons.Size = new System.Drawing.Size(242, 1006);
             this.gbPersons.TabIndex = 2;
             this.gbPersons.TabStop = false;
             this.gbPersons.Text = "学生信息";
@@ -160,19 +160,19 @@ namespace CheckInManagement
             // 
             this.gbSubmits.Controls.Add(this.dgvSubmits);
             this.gbSubmits.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbSubmits.Location = new System.Drawing.Point(287, 0);
+            this.gbSubmits.Location = new System.Drawing.Point(242, 0);
             this.gbSubmits.Name = "gbSubmits";
-            this.gbSubmits.Size = new System.Drawing.Size(919, 821);
+            this.gbSubmits.Size = new System.Drawing.Size(1229, 1006);
             this.gbSubmits.TabIndex = 3;
             this.gbSubmits.TabStop = false;
             this.gbSubmits.Text = "打卡记录";
             // 
             // FrmManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1206, 821);
+            this.ClientSize = new System.Drawing.Size(1471, 1006);
             this.Controls.Add(this.gbSubmits);
             this.Controls.Add(this.gbPersons);
             this.Font = new System.Drawing.Font("宋体", 12F);
