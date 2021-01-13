@@ -11,6 +11,10 @@
 
 
 
+### 人员界面
+
+
+
 启动程序后进入登录界面
 
 ![](./image/Form-Login.png)
@@ -20,6 +24,20 @@
 ![](./image/Form-Submit.png)
 
 点击提交即可健康打卡
+
+
+
+### 管理员界面
+
+
+
+启动程序后进入登录界面
+
+![](./image/Form-ManagerLogin.png)
+
+登陆后进入管理界面，可查看学生信息和打卡信息
+
+![](./image/Form-Management.png)
 
 
 
@@ -43,7 +61,7 @@
 
 2. 创建名为`HealthCheckIn`的数据库
 
-3. 数据库中创建`personInfo`和`submitInfo`两张表
+3. 数据库中创建`personInfo`，`submitInfo`，`managerInfo`三张表
 
 4. personInfo表：
 
@@ -64,6 +82,11 @@
    | health      | nvarchar | 是           |
    | location    | nvarchar | 是           |
 
-   
+6. managerInfo表：
 
-6. 在代码的DataBaseHelper类中修改strConn，将server改为你的服务器名
+   | 名称     | 类型     | 是否可为null |
+   | -------- | -------- | ------------ |
+   | account  | nvarchar | 是           |
+   | password | nvarchar | 是           |
+
+7. 在代码的DataBaseHelper类中修改strConn，将server改为你的服务器名
