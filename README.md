@@ -77,7 +77,7 @@
    | 名称        | 类型     | 是否可为null |
    | ----------- | -------- | ------------ |
    | account     | nvachar  | 是           |
-   | time        | date     | 是           |
+   | time        | datetime | 是           |
    | temperature | int      | 是           |
    | health      | nvarchar | 是           |
    | location    | nvarchar | 是           |
