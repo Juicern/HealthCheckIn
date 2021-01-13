@@ -15,7 +15,7 @@
 
 启动程序后进入登录界面
 
-![](./image/Form-Login.png)
+![](https://github.com/Juicern/HealthCheckIn/blob/main/image/Form-Login.png)
 
 输入账号密码后进入提交界面
 
@@ -31,7 +31,7 @@
 
 启动程序后进入登录界面
 
-![](./image/Form-ManagerLogin.png)
+![](./image/https://github.com/Juicern/HealthCheckIn/blob/main/image/Form-ManagerLogin.png)
 
 登陆后进入管理界面，可查看学生信息和打卡信息
 
@@ -45,7 +45,7 @@
 
 若账号、密码、体温、健康、位置等信息未输入，则会弹窗报错
 
-![](./image/Form-InputError.png)
+![](https://github.com/Juicern/HealthCheckIn/blob/main/image/Form-InputError.png)
 
 
 
