@@ -30,19 +30,19 @@ namespace HealthCheckIn
         {
             this.tbAccount.Text = this.strAccount;
             this.tbTime.Text = DateTime.Now.ToString("yyyy-MM-dd");
-            this.tbTemperature.Text = dictSubmitInfo["temperature"];
-            this.cbHealth.Text = dictSubmitInfo["health"];
-            this.cbLocation.Text = dictSubmitInfo["location"];
+            this.tbTemperature.Text = dictSubmitInfo[ParameterHelper.temperature];
+            this.cbHealth.Text = dictSubmitInfo[ParameterHelper.health];
+            this.cbLocation.Text = dictSubmitInfo[ParameterHelper.location];
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             if (!CheckInput()) return;
-            dictSubmitInfo.Add("account", this.tbAccount.Text);
-            dictSubmitInfo.Add("time", this.tbTime.Text);
-            dictSubmitInfo["temperature"] = this.tbTemperature.Text;
-            dictSubmitInfo["health"] = this.cbHealth.Text;
-            dictSubmitInfo["location"] = this.cbLocation.Text;
+            dictSubmitInfo.Add(ParameterHelper.account, this.tbAccount.Text);
+            dictSubmitInfo.Add(ParameterHelper.time, this.tbTime.Text);
+            dictSubmitInfo[ParameterHelper.temperature] = this.tbTemperature.Text;
+            dictSubmitInfo[ParameterHelper.health] = this.cbHealth.Text;
+            dictSubmitInfo[ParameterHelper.location] = this.cbLocation.Text;
 
             //更新数据库
             SubmitHelper.UpdateSubmitInfo(dictSubmitInfo);

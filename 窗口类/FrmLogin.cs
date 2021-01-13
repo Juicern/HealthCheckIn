@@ -29,8 +29,8 @@ namespace HealthCheckIn
         }
         private void InitInfo()
         {
-            this.tbAccount.Text = dictLoginInfo["account"];
-            this.tbPassword.Text = dictLoginInfo["password"];
+            this.tbAccount.Text = dictLoginInfo[ParameterHelper.personAccount];
+            this.tbPassword.Text = dictLoginInfo[ParameterHelper.personPassword];
         }
         
         private void btnLogin_Click(object sender, EventArgs e)
@@ -79,8 +79,8 @@ namespace HealthCheckIn
         /// 登录，跳到提交表单的窗口
         /// </summary>
         private void Login() {
-            dictLoginInfo["account"] = this.tbAccount.Text;
-            dictLoginInfo["password"] = this.tbPassword.Text;
+            dictLoginInfo[ParameterHelper.personAccount] = this.tbAccount.Text;
+            dictLoginInfo[ParameterHelper.personPassword] = this.tbPassword.Text;
             PersonLoginHelper.UpdateLoginInfoToConfig(dictLoginInfo);
             this.DialogResult = DialogResult.OK;
             Program.strCurAccount = this.tbAccount.Text;
