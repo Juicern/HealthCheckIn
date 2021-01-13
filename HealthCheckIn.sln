@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheckIn", "HealthCheckIn.csproj", "{258A1491-977E-43FE-88FA-0CC073DAE473}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckInHelper", "CheckInHelper\CheckInHelper.csproj", "{7E82CD87-55C5-4C7A-9A49-0B3257601EC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckInHelper", "..\CheckInHelper\CheckInHelper.csproj", "{7E82CD87-55C5-4C7A-9A49-0B3257601EC9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckInManagement", "CheckInManagement\CheckInManagement.csproj", "{706B966C-D86B-44F1-8E0A-C5D89F653C78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckInManagement", "..\CheckInManagement\CheckInManagement.csproj", "{706B966C-D86B-44F1-8E0A-C5D89F653C78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheckIn", "HealthCheckIn\HealthCheckIn.csproj", "{258A1491-977E-43FE-88FA-0CC073DAE473}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{258A1491-977E-43FE-88FA-0CC073DAE473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{258A1491-977E-43FE-88FA-0CC073DAE473}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{258A1491-977E-43FE-88FA-0CC073DAE473}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{258A1491-977E-43FE-88FA-0CC073DAE473}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7E82CD87-55C5-4C7A-9A49-0B3257601EC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7E82CD87-55C5-4C7A-9A49-0B3257601EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E82CD87-55C5-4C7A-9A49-0B3257601EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{706B966C-D86B-44F1-8E0A-C5D89F653C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{706B966C-D86B-44F1-8E0A-C5D89F653C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{706B966C-D86B-44F1-8E0A-C5D89F653C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{258A1491-977E-43FE-88FA-0CC073DAE473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{258A1491-977E-43FE-88FA-0CC073DAE473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{258A1491-977E-43FE-88FA-0CC073DAE473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{258A1491-977E-43FE-88FA-0CC073DAE473}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

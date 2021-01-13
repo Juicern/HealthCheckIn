@@ -1,0 +1,6 @@
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\CheckInHelper\bin\Release\CheckInHelper.dll
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\CheckInHelper\bin\Release\CheckInHelper.pdb
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\CheckInHelper\obj\Release\CheckInHelper.csprojAssemblyReference.cache
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\CheckInHelper\obj\Release\CheckInHelper.csproj.CoreCompileInputs.cache
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\CheckInHelper\obj\Release\CheckInHelper.dll
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\CheckInHelper\obj\Release\CheckInHelper.pdb
