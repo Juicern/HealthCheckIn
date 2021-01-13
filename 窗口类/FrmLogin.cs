@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using CheckInHelper;
 
 namespace HealthCheckIn
 {
@@ -23,7 +24,7 @@ namespace HealthCheckIn
         private void FrmLogin_Load(object sender, EventArgs e)
         {
             //读取配置文件
-            this.dictLoginInfo = LoginHelper.GetLoginInfoFormConfig();
+            this.dictLoginInfo = PersonLoginHelper.GetLoginInfoFormConfig();
             InitInfo();
         }
         private void InitInfo()
@@ -36,13 +37,13 @@ namespace HealthCheckIn
         {
             if (!CheckInput()) return;
             //账号不存在
-            if (!LoginHelper.CheckAccount(this.tbAccount.Text))
+            if (!PersonLoginHelper.CheckAccount(this.tbAccount.Text))
             {
                 MessageBox.Show("账号不存在，请点击“注册”按钮注册", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             //密码错误
-            if(!LoginHelper.CheckLogin(this.tbAccount.Text, this.tbPassword.Text))
+            if(!PersonLoginHelper.CheckLogin(this.tbAccount.Text, this.tbPassword.Text))
             {
                 MessageBox.Show("密码错误，请重试", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -55,13 +56,13 @@ namespace HealthCheckIn
         {
             if (!CheckInput()) return;
             //账号已存在
-            if (LoginHelper.CheckAccount(this.tbAccount.Text))
+            if (PersonLoginHelper.CheckAccount(this.tbAccount.Text))
             {
                 MessageBox.Show("账号已存在，请点击“登录”按钮登录", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             // 注册
-            var registerInfo = LoginHelper.Register(this.tbAccount.Text, this.tbPassword.Text);
+            var registerInfo = PersonLoginHelper.Register(this.tbAccount.Text, this.tbPassword.Text);
             if (registerInfo.Item1)
             {
                 MessageBox.Show("注册成功，将直接登录", "注册成功", MessageBoxButtons.OK);
@@ -80,7 +81,7 @@ namespace HealthCheckIn
         private void Login() {
             dictLoginInfo["account"] = this.tbAccount.Text;
             dictLoginInfo["password"] = this.tbPassword.Text;
-            LoginHelper.UpdateLoginInfoToConfig(dictLoginInfo);
+            PersonLoginHelper.UpdateLoginInfoToConfig(dictLoginInfo);
             this.DialogResult = DialogResult.OK;
             Program.strCurAccount = this.tbAccount.Text;
             this.Close();
