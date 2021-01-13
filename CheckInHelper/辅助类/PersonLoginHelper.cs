@@ -13,7 +13,7 @@ namespace CheckInHelper
         /// 从配置文件中获得人员登录信息
         /// </summary>
         /// <returns>人员登录信息</returns>
-        public static Person GetLoginInfoFormConfig()
+        public static Person GetLoginInfoFromConfig()
         {
             return new Person
             {

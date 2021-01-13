@@ -30,17 +30,17 @@ namespace CheckInHelper
         /// <summary>
         /// 更新配置信息
         /// </summary>
-        /// <param name="newKey">新的key</param>
-        /// <param name="newValue">新的value</param>
-        public static void UpdateAppConfig(string newKey, string newValue)
+        /// <param name="strKey">新的key</param>
+        /// <param name="strValue">新的value</param>
+        public static void UpdateAppConfig(string strKey, string strValue)
         {
             string file = System.Windows.Forms.Application.ExecutablePath;
             Configuration config = ConfigurationManager.OpenExeConfiguration(file);
-            if (config.AppSettings.Settings.AllKeys.Any(x => x == newKey))
+            if (config.AppSettings.Settings.AllKeys.Any(x => x == strKey))
             {
-                config.AppSettings.Settings.Remove(newKey);
+                config.AppSettings.Settings.Remove(strKey);
             }
-            config.AppSettings.Settings.Add(newKey, newValue);
+            config.AppSettings.Settings.Add(strKey, strValue);
             config.Save(ConfigurationSaveMode.Modified);
             ConfigurationManager.RefreshSection("appSettings");
         }

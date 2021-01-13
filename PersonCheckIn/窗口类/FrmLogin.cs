@@ -23,7 +23,7 @@ namespace HealthCheckIn
         private void FrmLogin_Load(object sender, EventArgs e)
         {
             //读取配置文件
-            this.person = PersonLoginHelper.GetLoginInfoFormConfig();
+            this.person = PersonLoginHelper.GetLoginInfoFromConfig();
             InitInfo();
         }
         private void InitInfo()
