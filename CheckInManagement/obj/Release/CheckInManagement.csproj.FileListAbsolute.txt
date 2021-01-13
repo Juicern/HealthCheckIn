@@ -1,0 +1,14 @@
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\bin\Release\CheckInManagement.exe.config
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\bin\Release\CheckInManagement.exe
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\bin\Release\CheckInManagement.pdb
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\bin\Release\CheckInHelper.dll
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\bin\Release\CheckInHelper.pdb
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\obj\Release\CheckInManagement.csprojAssemblyReference.cache
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\obj\Release\CheckInManagement.FrmLogin.resources
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\obj\Release\CheckInManagement.FrmManagement.resources
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\obj\Release\CheckInManagement.Properties.Resources.resources
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\obj\Release\CheckInManagement.csproj.GenerateResource.cache
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\obj\Release\CheckInManagement.csproj.CoreCompileInputs.cache
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\obj\Release\CheckInManagement.csproj.CopyComplete
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\obj\Release\CheckInManagement.exe
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInManagement\obj\Release\CheckInManagement.pdb
