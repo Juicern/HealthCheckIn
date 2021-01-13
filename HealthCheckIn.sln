@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckInHelper", "CheckInHel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckInManagement", "CheckInManagement\CheckInManagement.csproj", "{706B966C-D86B-44F1-8E0A-C5D89F653C78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheckIn", "HealthCheckIn\HealthCheckIn.csproj", "{258A1491-977E-43FE-88FA-0CC073DAE473}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonCheckIn", "PersonCheckIn\PersonCheckIn.csproj", "{258A1491-977E-43FE-88FA-0CC073DAE473}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

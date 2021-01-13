@@ -63,7 +63,7 @@ namespace CheckInHelper
                 if (com.ExecuteReader().HasRows) return true;
                 return false;
             }
-            catch(Exception ex)
+            catch
             {
                 return false;
             }

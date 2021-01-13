@@ -1,0 +1,14 @@
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\obj\Debug\HealthCheckIn.exe
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\obj\Debug\HealthCheckIn.pdb
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\bin\Debug\HealthCheckIn.exe.config
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\bin\Debug\HealthCheckIn.exe
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\bin\Debug\HealthCheckIn.pdb
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\bin\Debug\CheckInHelper.dll
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\bin\Debug\CheckInHelper.pdb
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\obj\Debug\PersonCheckIn.csprojAssemblyReference.cache
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\obj\Debug\HealthCheckIn.FrmLogin.resources
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\obj\Debug\HealthCheckIn.FrmSubmit.resources
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\obj\Debug\HealthCheckIn.Properties.Resources.resources
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\obj\Debug\PersonCheckIn.csproj.GenerateResource.cache
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\obj\Debug\PersonCheckIn.csproj.CoreCompileInputs.cache
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\PersonCheckIn\obj\Debug\PersonCheckIn.csproj.CopyComplete

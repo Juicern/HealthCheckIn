@@ -46,24 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmLogin.cs">
+    <Compile Include="窗口类\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin.Designer.cs">
+    <Compile Include="窗口类\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmManagement.cs">
+    <Compile Include="窗口类\FrmManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmManagement.Designer.cs">
+    <Compile Include="窗口类\FrmManagement.Designer.cs">
       <DependentUpon>FrmManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmLogin.resx">
+    <EmbeddedResource Include="窗口类\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmManagement.resx">
+    <EmbeddedResource Include="窗口类\FrmManagement.resx">
       <DependentUpon>FrmManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
