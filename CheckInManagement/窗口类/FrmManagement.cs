@@ -23,6 +23,10 @@ namespace CheckInManagement
             RefreshPersons();
             RefreshSubmits();
         }
+        
+        /// <summary>
+        /// 刷新人员信息
+        /// </summary>
         private void RefreshPersons()
         {
             this.lvPersons.Items.Clear();
@@ -35,6 +39,10 @@ namespace CheckInManagement
                 this.lvPersons.Items.Add(item);       
             }
         }
+        /// <summary>
+        /// 刷新打卡信息，若未选中人员则显示全部信息
+        /// </summary>
+        /// <param name="strAccount">选中的人员</param>
         private void RefreshSubmits(string strAccount = null)
         {
             this.dgvSubmits.Rows.Clear();

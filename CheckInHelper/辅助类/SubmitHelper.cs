@@ -8,7 +8,10 @@ namespace CheckInHelper
 {
     public static class SubmitHelper
     {
-        //读取配置
+        /// <summary>
+        /// 读取配置中的打卡信息
+        /// </summary>
+        /// <returns>打卡信息</returns>
         public static Submit GetSubmitInfoFromConfig()
         {
             return new Submit
@@ -18,14 +21,21 @@ namespace CheckInHelper
                 location = ConfigHelper.GetAppConfig(ParameterHelper.location)
             };
         }
-        //修改配置
+        /// <summary>
+        /// 修改配置中的打卡信息
+        /// </summary>
+        /// <param name="submit">打卡信息</param>
         public static void UpdateSubmitInfoToConfig(Submit submit)
         {
             ConfigHelper.UpdateAppConfig(ParameterHelper.temperature, submit.temperature);
             ConfigHelper.UpdateAppConfig(ParameterHelper.health, submit.health);
             ConfigHelper.UpdateAppConfig(ParameterHelper.location, submit.location);
         }
-        //提交信息更新到数据库
+        /// <summary>
+        /// 更新打卡信息到数据库
+        /// </summary>
+        /// <param name="submit">打卡信息</param>
+        /// <returns>是否更新成功</returns>
         public static bool UpdateSubmitInfo(Submit submit) => DataBaseHelper.GetInstance().UpdateSubmitInfo(ParameterHelper.submitInfo, submit);
     }
 }

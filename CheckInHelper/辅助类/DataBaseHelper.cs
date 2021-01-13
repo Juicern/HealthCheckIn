@@ -9,17 +9,15 @@ namespace CheckInHelper
 {
     public class DataBaseHelper
     {
-
+        //需加上MultipleActiveResultSets=true，否则会因系统中有多个command而报错
         private const string strConn = @"server=SURFACE-PRO;database=HealthCheckIn;uid=sa;pwd=123456;MultipleActiveResultSets=true";
-        //private string strConn = "Server=SURFACE-PRO;Database=HealthCheckIn;Integrated Security = true;";
-        private SqlConnection conn;
+        private readonly SqlConnection conn;
         private static DataBaseHelper instance;
         private DataBaseHelper()
         {
             conn = new SqlConnection(strConn);
             if(conn.State == System.Data.ConnectionState.Closed) conn.Open();
-        }
-        
+        }   
         public static DataBaseHelper GetInstance()
         {
             if(instance == null)

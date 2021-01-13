@@ -9,3 +9,4 @@ C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\�
 C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInHelper\obj\Debug\CheckInHelper.csproj.CoreCompileInputs.cache
 C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInHelper\obj\Debug\CheckInHelper.dll
 C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInHelper\obj\Debug\CheckInHelper.pdb
+C:\Users\RickyChu\OneDrive\大四上courses\计算机系统综合课程设计\项目代码\HealthCheckIn\CheckInHelper\obj\Debug\CheckInHelper.csprojAssemblyReference.cache
