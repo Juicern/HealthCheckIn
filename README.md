@@ -1,7 +1,7 @@
 # HealthCheckIn
-本项目为2017级河海大学计算机专业《计算机课程综合课程设计》项目。
+本專案為2017級河海大學計算機專業《計算機課程綜合課程設計》專案。
 
-需要文档的话可以email我，邮箱：qs4869@outlook.com。
+需要文件的話可以email我，郵箱：qs4869@outlook.com。
 
 
 
@@ -9,41 +9,41 @@
 
 
 
-### 人员界面
+### 人員介面
 
 
 
-启动程序后进入登录界面
+啟動程式後進入登入介面
 
 ![](https://github.com/Juicern/HealthCheckIn/blob/main/image/Form-Login.png)
 
-输入账号密码后进入提交界面
+輸入賬號密碼後進入提交介面
 
 ![](./image/Form-Submit.png)
 
-点击提交即可健康打卡
+點選提交即可健康打卡
 
 
 
-### 管理员界面
+### 管理員介面
 
 
 
-启动程序后进入登录界面
+啟動程式後進入登入介面
 
 ![](./image/https://github.com/Juicern/HealthCheckIn/blob/main/image/Form-ManagerLogin.png)
 
-登陆后进入管理界面，可查看学生信息和打卡信息
+登陸後進入管理介面，可檢視學生資訊和打卡資訊
 
 ![](./image/Form-Management.png)
 
 
 
-## 错误提示
+## 錯誤提示
 
 
 
-若账号、密码、体温、健康、位置等信息未输入，则会弹窗报错
+若賬號、密碼、體溫、健康、位置等資訊未輸入，則會彈窗報錯
 
 ![](https://github.com/Juicern/HealthCheckIn/blob/main/image/Form-InputError.png)
 
@@ -53,17 +53,17 @@
 
 
 
-因本项目使用了本地数据库，因此需要现在本地搭建数据库。
+因本專案使用了本地資料庫，因此需要現在本地搭建資料庫。
 
-1. 下载sql server
+1. 下載sql server
 
-2. 创建名为`HealthCheckIn`的数据库
+2. 建立名為`HealthCheckIn`的資料庫
 
-3. 数据库中创建`personInfo`，`submitInfo`，`managerInfo`三张表
+3. 資料庫中建立`personInfo`，`submitInfo`，`managerInfo`三張表
 
 4. personInfo表：
 
-   | 名称     | 类型     | 是否可为null |
+   | 名稱     | 型別     | 是否可為null |
    | -------- | -------- | ------------ |
    | account  | nvarchar | 是           |
    | password | nvarchar | 是           |
@@ -72,7 +72,7 @@
 
 5. submitInfo表：
 
-   | 名称        | 类型     | 是否可为null |
+   | 名稱        | 型別     | 是否可為null |
    | ----------- | -------- | ------------ |
    | account     | nvachar  | 是           |
    | time        | datetime | 是           |
@@ -82,9 +82,9 @@
 
 6. managerInfo表：
 
-   | 名称     | 类型     | 是否可为null |
+   | 名稱     | 型別     | 是否可為null |
    | -------- | -------- | ------------ |
    | account  | nvarchar | 是           |
    | password | nvarchar | 是           |
 
-7. 在代码的DataBaseHelper类中修改strConn，将server改为你的服务器名
+7. 在程式碼的DataBaseHelper類中修改strConn，將server改為你的伺服器名
